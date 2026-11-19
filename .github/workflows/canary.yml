@@ -1,0 +1,8 @@
+name: canary
+on: [push]
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "deploy_key=atm-canary-workflow-key-2026"
